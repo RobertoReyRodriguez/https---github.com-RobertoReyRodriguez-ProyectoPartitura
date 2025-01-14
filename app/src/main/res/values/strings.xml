@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CreadorPartiturasRober</string>
+<string name="username_hint">Usuario</string>
+<string name="password_hint">Contraseña</string>
+<string name="confirm_password_hint">Confirmar Contraseña</string>
+<string name="register">Registrarse</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="welcome_message">¡Bienvenido a Music Composer!</string>
+    <string name="compose">Comenzar a Componer</string>
+    <string name="view_scores">Ver Partituras Guardadas</string>
+    <string name="logout">Cerrar Sesión</string>
+    </resources>
+

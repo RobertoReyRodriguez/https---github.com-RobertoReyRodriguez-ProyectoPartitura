@@ -1,0 +1,68 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen del logo -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp" />
+
+    <!-- Contenedor de campos y botones -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logoImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp">
+
+        <!-- Campo de texto para el usuario -->
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username_hint"
+            android:padding="12dp"
+            android:backgroundTint="@color/black" />
+
+        <!-- Campo de texto para la contraseña -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password_hint"
+            android:padding="12dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="8dp"
+            android:inputType="textPassword" />
+
+        <!-- Botón de inicio de sesión -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp" />
+
+        <!-- Botón para ir a registro -->
+        <Button
+            android:id="@+id/buttonToRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
